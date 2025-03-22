@@ -3,6 +3,9 @@ import pandas as pd
 import xml.etree.ElementTree as ET
 from glob import glob
 
+fichier = "/Users/Patrice/Proust/Lettres/03987_XVIII_307-637df4d1df8ed-66713160c9a90.xml"
+doosier = "/Users/Patrice/Proust/Lettres/"
+
 def extraire_contenu_tei(chemin_fichier):
     """
     Extrait le contenu d'un fichier XML TEI et le stocke sous forme structurée.
@@ -187,8 +190,6 @@ def exemple_dossier(chemin_dossier):
 
 # Utilisation
 
-fichier = "/Users/Patrice/Proust/Lettres/03987_XVIII_307-637df4d1df8ed-66713160c9a90.xml"
-doosier = "/Users/Patrice/Proust/Lettres/"
 print(f"Traitement en cours... {fichier}")
 #df = exemple_fichier_unique(fichier)
 df=exemple_dossier(doosier)
